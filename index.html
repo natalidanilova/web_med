@@ -5,9 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Valentinok — генератор валентинок</title>
   <meta name="description" content="Генератор мемных валентинок в стиле Love is. Нажми кнопку, выбери текст, поделись картинкой.">
-  <meta property="og:title" content="Valentinok — твоя валентинка">
+  <meta property="og:title" content="Valentinok — твоя валентинка ♥">
   <meta property="og:description" content="Мемная валентинка в стиле Love is — специально для тебя.">
+  <meta property="og:image" content="https://natalidanilova.github.io/web_med/og-preview.png">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://natalidanilova.github.io/web_med/">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -25,6 +27,16 @@
       <canvas id="card" width="800" height="800"></canvas>
     </section>
 
+    <!-- Stories preview -->
+    <section class="stories-preview" id="stories-preview" style="display:none;">
+      <p class="stories-label">Так валентинка будет выглядеть в Stories:</p>
+      <div class="stories-phone">
+        <div class="stories-screen">
+          <canvas id="stories-canvas" width="540" height="960"></canvas>
+        </div>
+      </div>
+    </section>
+
     <!-- Main action -->
     <section class="actions">
       <button id="btn-generate" class="btn btn-generate" type="button">
@@ -34,14 +46,14 @@
 
     <!-- Share -->
     <section class="share">
-      <button id="btn-download" class="btn btn-share btn-download" type="button">
-        Скачать картинку
-      </button>
       <button id="btn-telegram" class="btn btn-share btn-telegram" type="button">
         Отправить в Telegram
       </button>
       <button id="btn-instagram" class="btn btn-share btn-instagram" type="button">
-        Поделиться в Instagram
+        Поделиться в Instagram Stories
+      </button>
+      <button id="btn-download" class="btn btn-share btn-download" type="button">
+        Скачать картинку
       </button>
     </section>
 
