@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Valentinok — генератор валентинок</title>
+  <meta name="description" content="Генератор мемных валентинок в стиле Love is. Нажми кнопку, выбери текст, поделись картинкой.">
+  <meta property="og:title" content="Valentinok — твоя валентинка">
+  <meta property="og:description" content="Мемная валентинка в стиле Love is — специально для тебя.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="page">
+
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">♥ Valentinok</div>
+      <p class="tagline">Жми на кнопку — лови валентинку — отправляй!</p>
+    </header>
+
+    <!-- Card -->
+    <section class="card-wrapper">
+      <canvas id="card" width="800" height="800"></canvas>
+    </section>
+
+    <!-- Main action -->
+    <section class="actions">
+      <button id="btn-generate" class="btn btn-generate" type="button">
+        Новая валентинка
+      </button>
+    </section>
+
+    <!-- Share -->
+    <section class="share">
+      <button id="btn-download" class="btn btn-share btn-download" type="button">
+        Скачать картинку
+      </button>
+      <button id="btn-telegram" class="btn btn-share btn-telegram" type="button">
+        Отправить в Telegram
+      </button>
+      <button id="btn-instagram" class="btn btn-share btn-instagram" type="button">
+        Поделиться в Instagram
+      </button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      Сделано с ♥
+    </footer>
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
